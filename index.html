@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epicbook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid bg-primary d-flex">
+      <form class="d-flex" role="search" id="searchForm" onsubmit="searchBooks(event)">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-books">
+        <button class="btn btn-outline-light" type="submit">Cerca</button>
+      </form>
+      <div class="d-flex gap-1">
+        <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" id="cartOffCanvas">
+          <ion-icon name="cart-outline" class="cart">
+        </span>
+        </ion-icon><span class="mt-2" id="counterCart">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!--TITLE--> 
+    <div class="d-flex justify-content-around">
+      <h1 class="modifyTitle"><em>Epicbook</em></h1>
+    </div>
+
+    <!--CARDS CONTAINER-->
+    <div class="container gx-5">
+        <div class="row" id="cards-books"></div>
+    </div>
+
+    <!--OFFCANVAS-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column" id="cartContainer">
+        <div id="cartItems">
+          <p><strong>Quantita':</strong><span id="cartItemCount">0</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="container-fluid d-flex justify-content-around bg-primary">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6 class="text-light">Libri</h6>
+
+          <a href="#">Libri Novità</a>
+          <a href="#">Classifica Libri</a>
+          <a href="#">Libri Outlet</a>
+          <a href="#">Libri in Inglese</a>
+          <a href="#">eBook</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6>Libri vintage</h6>
+
+          <a href="#">Prime edizioni</a>
+          <a href="#">Libri rari e introvabili</a>
+          <a href="#">Copie autografate</a>
+          <a href="#">Collezioni</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6>CD</h6>
+
+          <a href="#">Novità CD</a>
+          <a href="#">Classifica CD</a>
+          <a href="#">Vinili</a>
+          <a href="#">Novità Vinili</a>
+          <a href="#">Classifica Vinili</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6>Film</h6>
+
+          <a href="#">Novità Film</a>
+          <a href="#">Classifica DVD</a>
+          <a href="#">Classifica Blu-ray</a>
+          <a href="#">Serie TV</a>
+          <a href="#">Bambini e Ragazzi</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6>Giochi</h6>
+
+          <a href="#">Costruzioni e mattoncini</a>
+          <a href="#">Giochi educativi</a>
+          <a href="#">Giochi di società</a>
+          <a href="#">Bambole e Bambolotti</a>
+          <a href="#">Action Figures</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-flex flex-column text-light-emphasis mt-2 text-center">
+          <h6>Altre categorie</h6>
+
+          <a href="#">Videogames</a>
+          <a href="#">Cartoleria</a>
+          <a href="#">Informatica</a>
+          <a href="#">Foto e Videocamere</a>
+          <a href="#">Telefonia e GPS</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.cart {
+    height: 30px;
+    width: 30px;
+    color: white;
+    margin-top: 4px;
+}
+
+.opacity {
+    opacity: 0.5;
+} 
+
+.modifyImg {
+    height: 100px;
+    width: 200px;
+}
+
+footer h6 {
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    min-width: 250px;
+}
+
+#cards-books .col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+    padding-top: 70px;
+    background-color: rgb(188, 224, 212);
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.modifyTitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(137, 137, 198);
+}
+
+.offcanvas {
+    background: rgb(214, 209, 209);
+}
+
+.btn-secondary {
+    background: rgb(169, 168, 168);
+    text-decoration: none;
+}
